@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Шәкәрім Құдайбердіұлы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url("assets/minimalist-rorouni-kenshin-manga-dsllu29nhwwytxtl.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f0f0f0;
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+    }
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 1); /* Толық қараңғы фон */
+      padding: 12px 0;
+      text-align: center;
+      z-index: 1000;
+      border-bottom: 1px solid #00cccc;
+    }
+    .fixed-title h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00cccc;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 100px auto 24px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 24px;
+      border-radius: 12px;
+    }
+    .badge {
+      text-align: center;
+      background: #222;
+      color: #ffd166;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      font-size: 1.1rem;
+    }
+    .portrait {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 24px;
+      border-radius: 8px;
+      border: 2px solid #444;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 16px;
+    }
+    .btn {
+      background: #00cccc;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 16px;
+    }
+    .btn:hover {
+      background: #009999;
+    }
+    .actions {
+      text-align: center;
+      margin-top: 24px;
+    }
+    .viewer {
+      display: none;
+    }
+    .viewer iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      z-index: 999;
+    }
+    .viewer .actions {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed-title">
+    <h1>ШӘКӘРІМ ҚҰДАЙБЕРДІҰЛЫ</h1>
+  </div>
+
+  <div class="wrap">
+    <div class="badge">Қазақ руханиятының шамшырағы</div>
+
+    <img src="assets/ШӘКӘШӘКӘ.jpg" alt="Шәкәрім портреті" class="portrait">
+
+    <p>
+      Шәкәрім Құдайбердіұлы (1858–1931) — қазақтың ұлы ақыны, ойшылы, тарихшысы, философы және композиторы.
+      Ол Абай Құнанбайұлының немере інісі, әрі рухани ізбасары болды. Шәкәрім қазақ әдебиетінің дамуына зор үлес
+      қосып, адамгершілік, ар-ождан, әділет, білім мен ғылым тақырыптарын терең қозғаған шығармалар жазды.
+    </p>
+
+    <p>
+      Ол араб, парсы, түрік және орыс тілдерін меңгеріп, әлем әдебиетін қазақшаға аударды. Оның шығармаларында
+      шығыс пен батыс ойшылдарының идеялары үндесіп, қазақы дүниетаныммен үйлесім тапты. Шәкәрімнің «Үш анық»
+      атты философиялық еңбегі — адам, ар, ақиқат ұғымдарын терең талдаған рухани туынды.
+    </p>
+
+    <p>
+      Шәкәрімнің діни-ағартушылық бағыттағы еңбектерінің бірі — «Мұсылмандық шарты». Бұл кітапта ислам дінінің
+      негіздері, парыздар мен амалдар қазақша, қарапайым тілмен түсіндірілген. Бұл еңбек Шәкәрімді «Ұлы Даланың
+      дарын иесі» ретінде танытады.
+    </p>
+
+    <p>
+      Кеңестік кезеңде қуғын-сүргінге ұшыраған Шәкәрім 1931 жылы Шыңғыстауда қайтыс болды. Оның мұрасы тәуелсіздік
+      алғаннан кейін қайта зерттеліп, халыққа кеңінен таныла бастады.
+    </p>
+
+    <div class="actions">
+      <a href="#" class="btn" onclick="document.getElementById('viewer').style.display='block'; return false;">
+        Кітапты ашу
+      </a>
+    </div>
+  </div>
+
+  <div class="viewer" id="viewer">
+    <iframe src="file:///C:/Users/Nurdau/Downloads/shakarim.pdf" title="Мұсылмандық шарты"></iframe>
+    <div class="actions">
+      <a href="#" class="btn" onclick="document.getElementById('viewer').style.display='none'; return false;">
+        ← Артқа қайту
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
